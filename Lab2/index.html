@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Projects</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div id="header">
+			<div class="name">MENU</div>
+			<div id="buttons">
+				<input type="button" value="Clean" onclick="cleanLC();location.reload();">
+			</div>
+			<form id="page_choise">
+				<div class="menu">
+					<div class="menu_option">
+						<input type="radio" id="client" name="page" value="client">
+						<label for="client">Client</label>
+					</div>
+			
+					<div class="menu_option">
+						<input type="radio" id="project" name="page" value="project">
+						<label for="project">Project</label>
+					</div>
+		
+					<div class="menu_option">
+						<input type="radio" id="employee" name="page" value="employee">
+						<label for="employee">Employee</label>
+					</div>
+		
+					<div class="menu_option">
+						<input type="radio" id="projectOnGoing" name="page" value="projectOnGoing">
+						<label for="projectOnGoing">Projects On Going</label>
+					</div>
+				</div>
+			</form>
+
+			<div id="reports" class="menu">
+				<div class="menu_option">
+					<label for="rep1">Show all client's projects:</label>
+					<input type="text" id="rep1" name="rep1">
+					<input type="button" value="Create" onclick="rep1();">
+				</div>
+				<div class="menu_option">
+					<label for="rep2">Show all employee's projects:</label>
+					<input type="text" id="rep2" name="rep2">
+					<input type="button" value="Create" onclick="rep2();">
+				</div>
+				<div class="menu_option">
+					<label for="rep3">Date:</label>
+					<input type="date" id="rep3" name="rep3">
+					<input type="button" value="Create" onclick="rep3();">
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="name"></div>
+			<form id="form_create">
+				<div id="create" class ="menu">
+				</div>
+			</form>
+			<div class="name">TABLE</div>
+			<div id="show_table">
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
